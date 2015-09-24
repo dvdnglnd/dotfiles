@@ -1,0 +1,11 @@
+(ns test.core)
+
+(defn keywordize
+  "This is documentation"
+  [kvp]
+  (let [[k v] kvp]
+    [(keyword (.replace k "--" "")) v]))
+
+(defn parse-args [args]
+  (into {} (map keywordize (partition 2 args))))
+

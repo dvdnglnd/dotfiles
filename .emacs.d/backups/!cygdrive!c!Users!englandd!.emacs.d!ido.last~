@@ -1,0 +1,111 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/englandd/fun/rust-zone/dining_philosophers/" . "src/")
+ ("c:/Users/englandd/fun/rust-zone/" . "dining_philosophers/")
+ ("c:/Users/englandd/fun/clojure/test/src/" . "test/")
+ ("c:/Users/englandd/fun/clojure/test/" . "src/")
+ ("c:/Users/englandd/fun/clojure/" . "test/")
+ ("c:/Users/" . "englandd/")
+ ("c:/" . "Users/")
+ ("c:/Users/englandd/fun/scala-test/src/main/" . "scala/")
+ ("c:/Users/englandd/fun/scala-test/src/" . "main/")
+ ("c:/Users/englandd/fun/scala-test/" . "src/")
+ ("c:/Users/englandd/fun/" . "rust-zone/")
+ ("c:/Users/englandd/" . "fun/")
+ ("c:/Users/englandd/scala-koans/hello/" . "project/")
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/src/main/" . "java/")
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/src/" . "main/")
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/" . "src/")
+ ("c:/Users/englandd/scala-koans/" . "dmarsh-scalakoansexercises-ebbe18119d70/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/Users/englandd/.emacs.d/"
+ "c:/Users/englandd/fun/rust-zone/dining_philosophers/src/"
+ "c:/Users/englandd/.lein/"
+ "c:/Users/englandd/fun/clojure/test/src/test/"
+ "c:/Users/englandd/fun/clojure/test/"
+ "c:/Users/englandd/fun/scala-test/src/main/scala/"
+ "c:/Users/englandd/scala-koans/hello/project/"
+ "c:/Users/englandd/scala-koans/hello/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "init.el"
+ "main.rs"
+ "profiles.clj"
+ "core.clj"
+ "project.clj"
+ "init.el.bak.el"
+ "hw.scala"
+ "build.properties"
+ "build.sbt"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/englandd/.emacs.d/" (22019 63648 0 0) "snippets/" "places" "init.el" "ido.last" "ensime/" "elpa/" "backups/" "auto-save-list/" "../" "./")
+
+ ("c:/Users/englandd/fun/rust-zone/" (22019 62343 0 0) "rust-tdd/" "guessing_game/" "fizzbuzz/" "dining_philosophers/" "../" "./")
+
+ ("c:/Users/englandd/" (22019 62343 0 0) "_viminfo" "Web-Karma/" "visallo/" "VirtualBox VMs/" "Videos/" "tomcat/" "Templates/" "target/" "Start Menu/" "SendTo/" "Searches/" "scala-koans/" "sbt/" "Saved Games/" "Recent/" "racer/" "PrintHood/" "Pictures/" "ntuser.pol" "ntuser.ini" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{016888bd-6c6f-11de-8d1d-001e0bcde3ec}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "mcafee dlp quarantined files/" "lumify/" "Local Settings/" "Links/" "karma/" "GO/" "fun/" "Favorites/" "emacs-for-scala/" "Downloads/" "dotfiles/" "Documents/" "dev/" "Desktop/" "CUsersenglandddevactor-dmtargetrpmtcri-artifact-ais-oth-model/" "Cookies/" "Contacts/" "bin/" "Application Data/" "AppData/" ".VirtualBox/" ".vagrant.d/" ".ssh/" ".spacemacs" ".sbt/" ".rust/" ".Protege/" ".profile" ".oracle_jre_usage/" ".m2/" ".lumify/" ".lesshst" ".lein/" ".ivy2/" ".idlerc/" ".IdeaIC14/" ".gitconfig" ".emacs.d.spacemacs/" ".emacs.d.bak.2/" ".emacs.d/" ".docker/" ".config/" ".cargo/" ".boot2docker/" ".bash_history" ".bashrc" ".atom/" "../" "./")
+
+ ("c:/Users/englandd/.emacs.d.bak.2/" (22019 60530 0 0) "themes/" "README.md" "projectile.cache" "projectile-bookmarks.eld" "places" "init.el~" "init.el" "ido.last" "elpa/" "customizations/" "cider-history" "backups/" "auto-save-list/" ".smex-items" ".recentf" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/englandd/fun/rust-zone/dining_philosophers/src/" (22019 57298 0 0) "main.rs" "../" "./")
+
+ ("c:/Users/englandd/fun/rust-zone/dining_philosophers/" (22019 57105 0 0) "target/" "src/" "Cargo.toml" "Cargo.lock" ".gitignore" ".git/" "../" "./")
+
+ ("c:/Users/englandd/fun/" (22019 59218 0 0) "scala-test/" "rust-zone/" "nim/" "go/" "clojure/" "../" "./")
+
+ ("c:/Users/englandd/.lein/" (22006 57992 0 0) "self-installs/" "repl-port" "repl-history" "profiles.clj2226442749412298157.bak" "profiles.clj" "bin/" "../" "./")
+
+ ("c:/Users/englandd/fun/clojure/test/src/test/" (22007 7237 0 0) "core.clj" "../" "./")
+
+ ("c:/Users/englandd/fun/clojure/test/src/" (22007 4359 0 0) "test/" "../" "./")
+
+ ("c:/Users/englandd/fun/clojure/test/" (22007 4790 0 0) "test/" "target/" "src/" "resources/" "README.md" "project.clj" "LICENSE" "doc/" ".nrepl-port" ".hgignore" ".gitignore" "../" "./")
+
+ ("c:/Users/englandd/fun/clojure/" (22007 4359 0 0) "test/" "../" "./")
+
+ ("c:/Users/englandd/.emacs.d/elpa/" (22006 55232 0 0) "yasnippet-20150811.1222/" "with-editor-20150826.1438/" "window-numbering-20150228.1247/" "tidy-20111222.956/" "spinner-1.4/" "slime-20150824.958/" "scala-mode2-20150617.2350/" "sbt-mode-20150720.148/" "s-20150825.50/" "rainbow-delimiters-20150320.17/" "queue-0.1.1/" "projectile-20150908.155/" "popup-20150626.711/" "pkg-info-20150517.443/" "neotree-20150805.612/" "multiple-cursors-20150710.456/" "move-text-20140307.844/" "monokai-theme-20150521.2257/" "markdown-mode-20150828.651/" "magit-popup-20150824.1010/" "magit-20150826.1244/" "key-chord-20150808.1005/" "git-commit-20150824.1010/" "find-file-in-repository-20141214.2016/" "expand-region-20150804.2210/" "epl-20150517.433/" "ensime-20150819.1214/" "dired-details-20130824.458/" "dash-20150828.413/" "company-20150727.1415/" "color-theme-solarized-20150619.1734/" "color-theme-20080305.34/" "clojure-mode-20150910.1321/" "better-defaults-20150404.223/" "auto-complete-20150618.1949/" "async-20150818.1154/" "archives/" "ace-jump-mode-20140616.115/" "../" "./")
+
+ ("c:/Users/englandd/.emacs.d/elpa/queue-0.1.1/" (22006 55232 0 0) "queue.elc" "queue.el" "queue-pkg.elc" "queue-pkg.el" "queue-autoloads.el" "../" "./")
+
+ ("c:/Users/englandd/.emacs.d.bak/" (21955 29888 0 0) "auto-save-list/" "../" "./")
+
+ ("c:/Users/" (21909 14318 0 0) "wkstadmin/" "Public/" "englandd/" "desktop.ini" "Default User/" "Default/" "All Users/" "../" "./")
+
+ ("c:/emacs-24.5-bin-i686-mingw32/" (21955 29525 0 0) "var/" "share/" "libexec/" "bin/" "../" "./")
+
+ ("c:/emacs-24.5-bin-i686-mingw32/bin/" (21955 29486 0 0) "runemacs.exe" "libXpm.dll" "grep-changelog" "etags.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-24.5.exe" "ebrowse.exe" "ctags.exe" "addpm.exe" "../" "./")
+
+ ("c:/Users/englandd/fun/scala-test/src/main/scala/" (21984 48850 0 0) "hw.scala" "../" "./")
+
+ ("c:/Users/englandd/fun/scala-test/src/main/" (21984 48716 0 0) "scala/" "../" "./")
+
+ ("c:/Users/englandd/fun/scala-test/src/" (21984 48724 0 0) "test/" "main/" "../" "./")
+
+ ("c:/Users/englandd/fun/scala-test/" (21984 48932 0 0) "target/" "src/" "project/" "build.sbt" ".ensime" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/" (21984 42499 0 0) "new/" "hello/" "dmarsh-scalakoansexercises-ebbe18119d70/" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/hello/" (21984 48555 0 0) "target/" "project/" "hello.scala" "build.sbt" ".ensime" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/hello/project/" (21984 41048 0 0) "target/" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/src/main/java/" (21984 32577 0 0) "org/" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/src/main/" (21984 32577 0 0) "java/" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/src/" (21984 32577 0 0) "test/" "main/" "../" "./")
+
+ ("c:/Users/englandd/scala-koans/dmarsh-scalakoansexercises-ebbe18119d70/" (21984 33426 0 0) "target/" "src/" "sbtboot/" "sbt-launch.jar" "README-scala.txt" "project/" "koans.html" "koans.bat" "koans" "ivyrepo/" "build.sbt" ".hg_archival.txt" ".hgignore" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t
