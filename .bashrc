@@ -27,7 +27,10 @@ alias psmem10='ps auxf | sort -nr -k 4 | head -10'
 alias pscpu='ps auxf | sort -nr -k 3'
 alias pscpu10='ps auxf | sort -nr -k 3 | head -10'
 
-export PS1="\[\e[00;37m\] \t [\[\e[0m\]\[\e[00;33m\]\w\[\e[0m\]\[\e[00;37m\]]\n\[\e[0m\]\[\e[00;35m\]\u\[\e[0m\]\[\e[01;34m\]@\[\e[0m\]\[\e[00;36m\]\h\[\e[0m\]\[\e[01;37m\]>\[\e[0m\]"
+# Show if there are changes in current git repo
+export GIT_PS1_SHOWDIRTYSTATE=1
+
+#export PS1="\[\e[00;37m\] \t [\[\e[0m\]\[\e[00;33m\]\w\[\e[0m\]\[\e[00;37m\]]\e[1;36m$(__git_ps1)\n\[\e[0m\]\[\e[00;35m\]\u\[\e[0m\]\[\e[01;34m\]@\[\e[0m\]\[\e[00;36m\]\h\[\e[0m\]\[\e[01;37m\]>\[\e[0m\]"
 
 
 # don't put duplicate lines or lines starting with space in the history.
@@ -67,3 +70,6 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+
+PS1='\e[0;35m\u\e[0m@\e[1;32m\h\e[0m \e[0;33m\[\w\]\e[0m$(__git_ps1)\n\e[1;37m> \e[0m'
