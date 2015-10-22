@@ -46,7 +46,8 @@
                      company-racer
                      racer
                      flycheck
-                     flycheck-rust))
+                     flycheck-rust
+                     ensime))
 
 (package-initialize)
 
@@ -598,3 +599,7 @@ by using nxml's indentation rules."
 (setq initial-scratch-message nil)
 (setq inhibit-start-screen 1)
 (setq inhibit-splash-screen 1)
+
+;; Scala
+(require 'ensime)
+(add-hook 'scala-mode 'ensime-scala-mode-hook)
