@@ -46,6 +46,9 @@
 ;; for selecting buffer and file names
 (ido-ubiquitous-mode 1)
 
+(setq ido-file-extensions-order '(".rs" ".clj" ".scala" ".org" ".txt" ".py" ".emacs" ".xml" ".el" ".ini" ".cfg" ".cnf" ".java"))
+
+
 ;; Shows a list of buffers
 (global-set-key (kbd "C-x C-b") 'ibuffer)
 
@@ -59,3 +62,81 @@
 
 ;; projectile everywhere!
 (projectile-global-mode)
+
+(require 'ace-jump-mode)
+(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
+(autoload
+  'ace-jump-mode
+  "ace-jump-mode"
+  "Emacs quick move minor mode"
+ t)
+(autoload
+  'ace-jump-mode-pop-mark
+  "ace-jump-mode"
+  "Ace jump back:-)"
+ t)
+
+
+(defun search-to-brace ()
+  "Jump to the next open brace"
+  (interactive)
+  (search-forward "{"))
+(define-key global-map (kbd "M-s {") 'search-to-brace)
+
+(defun search-to-prev-brace ()
+    "Jump to the previous brace"
+    (interactive)
+    (search-backward "{"))
+(define-key global-map (kbd "M-S {") 'search-to-prev-brace)
+
+(defun search-to-close-brace ()
+  "Jump to the next close brace"
+  (interactive)
+  (search-forward "}"))
+(define-key global-map (kbd "M-s }") 'search-to-close-brace)
+
+(defun search-to-prev-close-brace ()
+  "Jump to the previous close brace"
+  (interactive)
+  (search-backward "}"))
+(define-key global-map (kbd "M-S }") 'search-to-prev-brace)
+
+(defun search-to-next-fn ()
+  "Jump to the next def"
+  (interactive)
+  (search-forward "fn "))
+(define-key global-map (kbd "M-s d") 'search-to-next-fn)
+
+(defun search-to-prev-fn ()
+  "Jump to the previous def"
+  (interactive)
+  (search-backward "fn "))
+(define-key global-map (kbd "M-S d") 'search-to-prev-fn)
+
+
+;; window command shortcuts
+(global-set-key (kbd "s-|") 'split-window-horizontally)
+(global-set-key (kbd "s--") 'split-window-vertically)
+(global-set-key (kbd "s-+") 'remove-split)
+(global-set-key (kbd "s-<up>") 'enlarge-window)
+(global-set-key (kbd "s-<down>") 'shrink-window)
+(global-set-key (kbd "s-<right>") 'enlarge-window-horizontally)
+(global-set-key (kbd "s-<left>") 'shrink-window-horizontally)
+(global-set-key (kbd "M-k") 'kill-whole-line)
+
+(global-set-key (kbd "s-1") 'ace-jump-line-mode)
+(global-set-key (kbd "s-2") 'ace-jump-word-mode)
+
+(global-set-key (kbd "s-f") 'find-file-in-repository)
+
+(require 'key-chord)
+(key-chord-mode 1)
+
+;; Enable better window switching
+(windmove-default-keybindings)
+
+;; navigate between windows
+(global-set-key (kbd "C-c <left>")  'windmove-left)
+(global-set-key (kbd "C-c <right>") 'windmove-right)
+(global-set-key (kbd "C-c <up>")    'windmove-up)
+(global-set-key (kbd "C-c <down>")  'windmove-down)

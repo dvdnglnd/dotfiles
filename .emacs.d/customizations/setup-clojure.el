@@ -2,10 +2,7 @@
 ;; Clojure
 ;;;;
 
-;; Enable paredit for Clojure
-(add-hook 'clojure-mode-hook 'enable-paredit-mode)
-
-;; This is useful for working with camel-case tokens, like names of
+;; This is useful for  with camel-case tokens, like names of
 ;; Java classes (e.g. JavaClassName)
 (add-hook 'clojure-mode-hook 'subword-mode)
 
@@ -36,8 +33,8 @@
 (setq cider-repl-pop-to-buffer-on-connect t)
 
 ;; When there's a cider error, show its buffer and switch to it
-(setq cider-show-error-buffer t)
-(setq cider-auto-select-error-buffer t)
+;; (setq cider-show-error-buffer t)
+;; (setq cider-auto-select-error-buffer t)
 
 ;; Where to store the cider history.
 (setq cider-repl-history-file "~/.emacs.d/cider-history")
@@ -46,7 +43,7 @@
 (setq cider-repl-wrap-history t)
 
 ;; enable paredit in your REPL
-(add-hook 'cider-repl-mode-hook 'paredit-mode)
+(add-hook 'cider-repl-mode-hook 'parinfer-mode)
 
 ;; Use clojure mode for other extensions
 (add-to-list 'auto-mode-alist '("\\.edn$" . clojure-mode))
@@ -80,3 +77,23 @@
      (define-key clojure-mode-map (kbd "C-M-r") 'cider-refresh)
      (define-key clojure-mode-map (kbd "C-c u") 'cider-user-ns)
      (define-key cider-mode-map (kbd "C-c u") 'cider-user-ns)))
+
+
+(add-hook 'clojure-mode-hook #'clj-refactor-mode)
+
+(add-hook 'clojure-mode-hook #'cider-mode)
+
+(add-hook 'clojure-mode-hook 'subword-mode)
+
+(add-hook 'clojure-mode-hook #'parinfer-mode)
+(add-hook 'emacs-lisp-mode-hook #'parinfer-mode)
+(add-hook 'common-lisp-mode-hook #'parinfer-mode)
+(add-hook 'scheme-mode-hook #'parinfer-mode)
+(add-hook 'lisp-mode-hook #'parinfer-mode)
+
+(setq parinfer-auto-switch-indent-mode t)
+
+(setq parinfer-auto-switch-indent-mode-when-closing t)
+
+(setq parinfer-extensions '(defaults smart-yank))
+
